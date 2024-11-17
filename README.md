@@ -1,58 +1,84 @@
-# Object Detection Using YOLOv8
+# Object Detection Using YOLOv8  
 
-This project is a comprehensive solution for license plate detection using the YOLOv8 object detection model. The workflow includes dataset preparation, model training, and the development of a Flask API for performing inference on license plate images.
+This project delivers a **comprehensive solution** for **license plate detection** using the state-of-the-art YOLOv8 object detection model. From dataset preparation and model training to developing a robust Flask API, this repository is your one-stop guide to implementing real-time license plate detection.  
 
-## Project Overview
+---
 
-In this project, I leveraged a license plate detection dataset from **Roboflow**, trained a **YOLOv8 OBB model** (with Oriented Bounding Boxes), and developed a Flask-based web service for detection. The model was trained for **10 epochs** and the results were visualized in a Jupyter Notebook. The project demonstrates how to integrate a pre-trained model into a web API, enabling the detection of license plates in images.
+## 🚀 **Project Highlights**  
 
-## Key Steps
+- **Oriented Bounding Boxes (OBB):** Handles rotated license plates with precision.  
+- **Flask API Integration:** Provides an easy-to-use web interface for detection.  
+- **GPU-Accelerated Training:** Powered by Kaggle for efficient model training.  
+- **Visualization-Ready:** Clear and insightful results showcased in a Jupyter Notebook.  
 
-### 1. **Dataset Preparation**
-- I used **Roboflow** to download a **license plate detection dataset** that contains images with corresponding bounding box annotations.
-- The dataset was used for training the YOLOv8 model.
+---
 
-### 2. **Training the YOLOv8 Model**
-- The model used in this project is **YOLOv8 OBB** (Oriented Bounding Boxes), which is designed to handle object detection tasks that involve rotated bounding boxes.
-- I trained the model for **10 epochs** using the GPU environment provided by **Kaggle**. 
-- The **best.pt** model weights were downloaded from Kaggle after training, which were then used for inference in this project.
-- Training was done on a GPU environment to ensure efficiency, and model performance was monitored throughout the training process.
+## 🛠️ **Features**  
 
-### 3. **Inference and Results**
-- After training, I performed inference on test images from the dataset and displayed the results, which include bounding boxes around detected license plates.
-- Below are examples of images with bounding boxes around detected license plates.
+### 1️⃣ **Dataset Preparation**  
+- Dataset sourced from **Roboflow** with high-quality annotations.  
+- Preprocessing steps include scaling, augmentations, and proper formatting for YOLOv8.
 
-#### Example Results:
-- **Example 1**: License plate detection with bounding boxes.
-  ![Project Diagram](https://i.postimg.cc/kGc4yRVT/419f8a15e8c72891-jpg-rf-f35f2e7ce0b5f68e3a67983a520cb5db.jpg)
+### 2️⃣ **YOLOv8 Training**  
+- Trained on a Kaggle **GPU environment** for optimal performance.  
+- Model trained for **10 epochs**, producing highly accurate predictions.  
+- The best model weights (`best.pt`) are ready for deployment.  
 
-- **Example 2**: 
-  ![Project Diagram](https://i.postimg.cc/6qmswBF9/b1610b49fdc8767a2-jpg-rf-31acbba2f162344db41abcf2565bcb80.jpg)
+### 3️⃣ **Flask API**  
+- **User-Friendly Interface:** Upload images via the web interface for detection.  
+- **AI-Powered Backend:** Returns:  
+  - Images with annotated bounding boxes.  
+  - JSON files with bounding box coordinates and class labels.  
 
-- **Example 3**: 
-  ![Project Diagram](https://i.postimg.cc/NMjP0W6L/uovneg34ahma1-jpg-rf-6b9fb846eff1bcc0db562de9b946ca2f.jpg)
+### 4️⃣ **Inference and Visualization**  
+- Intuitive visualization of results through bounding boxes and JSON outputs.  
+- Detection results include bounding box **coordinates**, **angles**, and class **labels**.  
 
-The results, including the images with bounding boxes and a JSON file with the bounding box coordinates, are saved after each inference.
+---
 
-### 4. **Flask API**
-- A **Flask web application** was created with two main services:
-  - **UI Backend**: Accepts image uploads from the user.
-  - **AI Backend**: Runs inference on the uploaded images using the trained YOLOv8 model.
-- The API performs inference and returns the following:
-  - Path to the output image with bounding boxes.
-  - Path to the JSON file containing the detected bounding box coordinates and class labels.
+## 📊 **Example Results**  
 
-### 5. **Jupyter Notebook**
-- The **Jupyter notebook** contains:
-  - Model training steps, including data preprocessing, training, and validation.
-  - Code to perform inference on images using the trained model.
-  - Visualization of detection results, including the images with drawn bounding boxes and results like coordinates of the bounding boxes, angle to which box is rotated etc.
-  
-The notebook is structured for anyone to easily check and replicate the results. **You can download the Jupyter notebook, run it on your own system, and observe the results.**
+See the YOLOv8 model in action below:  
 
-## How to Run
+**Example 1:**  
+Detected rotated license plate with oriented bounding boxes.  
+![Example 1](https://i.postimg.cc/kGc4yRVT/419f8a15e8c72891-jpg-rf-f35f2e7ce0b5f68e3a67983a520cb5db.jpg)  
 
-### 1. **Clone the Repository**
+**Example 2:**  
+License plate detected with high accuracy.  
+![Example 2](https://i.postimg.cc/6qmswBF9/b1610b49fdc8767a2-jpg-rf-31acbba2f162344db41abcf2565bcb80.jpg)  
+
+**Example 3:**  
+Detection of multiple plates within a single image.  
+![Example 3](https://i.postimg.cc/NMjP0W6L/uovneg34ahma1-jpg-rf-6b9fb846eff1bcc0db562de9b946ca2f.jpg)  
+
+**Example 4:**  
+Another example of a detected license plate with accurate bounding box positioning.  
+![Example 4](https://i.postimg.cc/GtG3m7n8/m417sncy6eda1-jpg-rf-5ecd2be865a84aee67271a8443af1f2d.jpg)  
+
+---
+
+## ⚙️ **Project Workflow**  
+
+1. **Dataset Preparation**  
+   - Downloaded and preprocessed the dataset from **Roboflow**.  
+
+2. **Model Training**  
+   - Trained the YOLOv8 model in a Kaggle GPU environment.  
+   - Saved the trained model weights as `best.pt`.  
+
+3. **Inference**  
+   - Performed inference using the trained model on test images.  
+   - Saved results as annotated images and JSON files with bounding box details.  
+
+4. **Flask API**  
+   - Built an API to handle image uploads and run the YOLOv8 model for real-time inference.  
+
+---
+
+## 🚀 **Getting Started**  
+
+### 1. Clone the Repository  
 ```bash
-git clone https://github.com/your-username/license-plate-detection.git
-cd license-plate-detection
+git clone https://github.com/Ankitjha2202/object_detection_services.git
+cd object_detection_services
