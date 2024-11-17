@@ -1,0 +1,6 @@
+names:
+  0: licenseplate
+path: ../datasets/roboflow
+test: /kaggle/working/License-Plate-Detection-1//test/images
+train: /kaggle/working/License-Plate-Detection-1//train/images
+val: /kaggle/working/License-Plate-Detection-1//valid/images
