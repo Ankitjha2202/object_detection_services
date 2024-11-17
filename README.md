@@ -1,4 +1,4 @@
-# License Plate Detection Using YOLOv8
+# Object Detection Using YOLOv8
 
 This project is a comprehensive solution for license plate detection using the YOLOv8 object detection model. The workflow includes dataset preparation, model training, and the development of a Flask API for performing inference on license plate images.
 
