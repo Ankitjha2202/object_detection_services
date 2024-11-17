@@ -69,10 +69,10 @@ Another example of a detected license plate with accurate bounding box positioni
 
 3. **Inference**  
    - Performed inference using the trained model on test images.  
-   - Saved results as annotated images and JSON files with bounding box details.  
+   - Saved results as annotated images and bounding box coordinates and rotated angle details.  
 
 4. **Flask API**  
-   - Built an API to handle image uploads and run the YOLOv8 model for real-time inference.  
+   - Built APIs to handle image uploads and run the YOLOv8 model for real-time inference.  
 
 ---
 
