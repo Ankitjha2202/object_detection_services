@@ -14,7 +14,8 @@ In this project, I leveraged a license plate detection dataset from **Roboflow**
 
 ### 2. **Training the YOLOv8 Model**
 - The model used in this project is **YOLOv8 OBB** (Oriented Bounding Boxes), which is designed to handle object detection tasks that involve rotated bounding boxes.
-- I trained the model for **10 epochs**, adjusting hyperparameters to achieve optimal performance on the dataset.
+- I trained the model for **10 epochs** using the GPU environment provided by **Kaggle**. 
+- The **best.pt** model weights were downloaded from Kaggle after training, which were then used for inference in this project.
 - Training was done on a GPU environment to ensure efficiency, and model performance was monitored throughout the training process.
 
 ### 3. **Inference and Results**
@@ -47,7 +48,7 @@ The results, including the images with bounding boxes and a JSON file with the b
   - Code to perform inference on images using the trained model.
   - Visualization of detection results, including the images with drawn bounding boxes and saved JSON results.
   
-The notebook is structured for anyone to easily check and replicate the results.
+The notebook is structured for anyone to easily check and replicate the results. **You can download the Jupyter notebook, run it on your own system, and observe the results.**
 
 ## How to Run
 
