@@ -26,10 +26,10 @@ In this project, I leveraged a license plate detection dataset from **Roboflow**
 - **Example 1**: License plate detection with bounding boxes.
   ![Project Diagram](https://i.postimg.cc/kGc4yRVT/419f8a15e8c72891-jpg-rf-f35f2e7ce0b5f68e3a67983a520cb5db.jpg)
 
-- **Example 2**: Another license plate detection with bounding boxes.
+- **Example 2**: 
   ![Project Diagram](https://i.postimg.cc/6qmswBF9/b1610b49fdc8767a2-jpg-rf-31acbba2f162344db41abcf2565bcb80.jpg)
 
-- **Example 3**: Another detection result showing multiple bounding boxes.
+- **Example 3**: 
   ![Project Diagram](https://i.postimg.cc/NMjP0W6L/uovneg34ahma1-jpg-rf-6b9fb846eff1bcc0db562de9b946ca2f.jpg)
 
 The results, including the images with bounding boxes and a JSON file with the bounding box coordinates, are saved after each inference.
