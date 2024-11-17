@@ -46,7 +46,7 @@ The results, including the images with bounding boxes and a JSON file with the b
 - The **Jupyter notebook** contains:
   - Model training steps, including data preprocessing, training, and validation.
   - Code to perform inference on images using the trained model.
-  - Visualization of detection results, including the images with drawn bounding boxes and saved JSON results.
+  - Visualization of detection results, including the images with drawn bounding boxes and results like coordinates of the bounding boxes, angle to which box is rotated etc.
   
 The notebook is structured for anyone to easily check and replicate the results. **You can download the Jupyter notebook, run it on your own system, and observe the results.**
 
