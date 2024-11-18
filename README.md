@@ -21,7 +21,7 @@ This project delivers a **comprehensive solution** for **license plate detection
 
 ### 2️⃣ **YOLOv8 Training**  
 - Trained on a Kaggle **GPU environment** for optimal performance.  
-- Model trained for **10 epochs**, producing highly accurate predictions.  
+- Model trained for **10 epochs** (for better prediction we can train for more epochs).
 - The best model weights (`best.pt`) are ready for deployment.  
 
 ### 3️⃣ **Flask API**  
